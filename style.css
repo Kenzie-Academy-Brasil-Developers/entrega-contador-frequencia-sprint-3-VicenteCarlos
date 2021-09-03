@@ -31,6 +31,14 @@ button{
     cursor: pointer;
 }
 
+#wordsDiv, #lettersDiv {
+    margin-top : 20px;
+    border: 2px solid blue;
+    padding: 5px;
+    color: darkred;
+    font-weight: bold
+}
+
 @media only screen and (min-width: 768px){
     .container{
         margin-top: 20px;

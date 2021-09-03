@@ -24,17 +24,12 @@ button.addEventListener("click", function() {
    
 
     for (let letter in letterCounts) {
-        
         const span = document.createElement("span"); 
         const textContent = `"${letter}": ${letterCounts[letter]}, `;
         span.innerText = textContent; 
         const letters = document.getElementById("lettersDiv");
         letters.style.marginTop = "20px"
         letters.appendChild(span); 
-        letters.style.border = "2px solid blue";
-        letters.style.padding = "5px";
-        letters.style.color = "darkred";
-        letters.style.fontWeight = "bold";
     }
     words = typedText.split(/\s/);
     
@@ -56,12 +51,6 @@ button.addEventListener("click", function() {
         span.innerText = textContent;
         const letters = document.getElementById("wordsDiv");
         letters.appendChild(span);
-        letters.style.marginTop = "20px";
-        letters.style.marginTop = "20px";
-        letters.style.border = "2px solid blue";
-        letters.style.padding = "5px";
-        letters.style.color = "darkred";
-        letters.style.fontWeight = "bold";
     }
 
 });
